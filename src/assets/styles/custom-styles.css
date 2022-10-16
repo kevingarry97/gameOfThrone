@@ -1,0 +1,38 @@
+.f-80 {
+    font-size: 80px !important;
+}
+.w-25 {
+    width: 100px !important;
+    height: 4px !important;
+    background-color: #D9D9D9 !important;
+    border-radius: 5px !important;
+    margin-right: 10px;
+}
+.bg-input {
+    background-color: #1C385F !important;
+}
+.pa-1 {
+    padding: 0px 5.4px !important;
+}
+.bg-primary-light {
+    background-color: #1D3960 !important;
+}
+.bg-primary-dark {
+    background-color: #1A3257 !important;
+}
+.text-smaller {
+    font-size: 11px;
+}
+.nav-item {
+    cursor: pointer !important;
+}
+.modal-dialog {
+    margin: 0px !important;
+    float: right !important;
+    min-width: 500px;
+    height: 100% !important;
+}
+.modal-content {
+    height: 100% !important;
+    background-color: #1C385F !important;
+}
