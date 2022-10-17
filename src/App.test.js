@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import HeroSection from './components/sections/hero';
 
-test('render play', () => {
-    render(<App />);
-    const linkscreen = screen.getByText(/Enjoy.Choose. Play/i);
-    expect(linkscreen).toBeInTheDocument();
+describe("Hero Section", () => {
+    it("Should render Play", async () => {
+        render(<HeroSection />);
+        // const textElement = screen.getByText(/play/i);
+        // expect(textElement).toBeInTheDocument();
+    })
 })
