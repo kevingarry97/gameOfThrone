@@ -14,9 +14,9 @@ Create a single page application. The SPA should display all houses of Game of T
 
 ### Setup
 
- ⁃ Download/clone the repository with `main` branch
- ⁃ Run `npm install`
- - Run `npm start`
+ ⁃ Download/clone the repository with `main` branch\
+ ⁃ Run `npm install`\
+ - Run `npm start`\
  ⁃ Run `npm run test` for tests
 
 ## Authors
