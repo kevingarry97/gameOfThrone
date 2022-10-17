@@ -50,15 +50,15 @@ const ProductList = () => {
             filters = characters.filter(user => 
                 user.name.toLowerCase().startsWith(query.toLowerCase())  
             )
-        else if(types && types == 'name')
+        else if(types && types === 'name')
             filters = characters.filter(user => 
                 user.name !== ''  
             )
-        else if(types && types == 'premium')
+        else if(types && types === 'premium')
             filters = characters.filter(user => 
                 user.culture !== ''  
             )
-        else if(types && types == 'free')
+        else if(types && types === 'free')
             filters = characters.filter(user => 
                 user.culture === ''  
             )
