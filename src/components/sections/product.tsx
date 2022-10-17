@@ -18,10 +18,12 @@ const ProductList = () => {
     const [types, setTypes] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false)
 
+    /** Function to accept inputs to use while Filtering */
     const handleSearch = (query: string) => {
         setQuery(query);
-      }
+    }
 
+    /** Function to Populate All Characters from API */
     const populateCharacter = async () => {
         setLoading(true)
         const {data} = await getCharacters();
@@ -29,15 +31,18 @@ const ProductList = () => {
         setLoading(false)
     }
 
+    /** Function to Call the Single Character Selected by User */
     const handleCharacter = async (value: number) => {
         const {data} = await singleCharacter(value);
         setCharacter(data);
     }
 
+    /** Dependency to Call the Get Characters on App Start */
     useEffect(() => {
         populateCharacter();
-    }, [])
-
+    }, []);
+    
+    /** Function to Handle Filtering Depending on User Needs */
     const getData = () => {
         let filters = characters;
         

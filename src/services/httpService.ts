@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+/** Global Error Handling Function to Specific Server Errors */
 axios.interceptors.response.use(undefined, (error) => {
   const expectedError =
     error.response &&
@@ -14,15 +15,10 @@ axios.interceptors.response.use(undefined, (error) => {
   return Promise.reject(error);
 });
 
-function setJwt(jwt: string) {
-  axios.defaults.headers.common["x-auth-token"] = jwt;
-}
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   get: axios.get,
   post: axios.post,
   put: axios.put,
   delete: axios.delete,
-  setJwt,
 };
